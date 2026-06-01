@@ -143,7 +143,7 @@ public class Main {
         System.out.println(stu.speak("你好"));
 
         // 多态
-        // 父类指向子类，调用子类重新父类的方法
+        // 父类指向子类，调用子类重写父类的方法
         // js原型链查找是一个思路：不关心对象是什么类型，只关心它有没有对应的方法。
         User user1 = new User();
         Student stu1 = new Student("小红");
