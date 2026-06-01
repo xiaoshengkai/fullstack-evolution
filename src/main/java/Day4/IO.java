@@ -1,5 +1,7 @@
 package Day4;
 
+// 文件流操作
+
 //4.1 字节流 vs 字符流
 //类型	基类	用途	典型子类
 //字节输入流	InputStream	读取原始字节	FileInputStream

@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+// ts 的 try catch 升级版
+
 public class Throwable {
     public static void main(String[] args) {
         // ========== 1. try-catch-finally ==========
