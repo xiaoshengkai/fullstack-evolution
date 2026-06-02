@@ -10,6 +10,7 @@
     <option name="enabledProfiles">
       <list>
         <option value="prod" />
+        <option value="dev" />
       </list>
     </option>
   </component>

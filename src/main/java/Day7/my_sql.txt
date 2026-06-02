@@ -35,6 +35,9 @@ INSERT INTO todo_item (title, priority, deadline) VALUES
 -- 详细查看表信息
 SHOW TABLE STATUS;
 
+-- 查看数据库
+SHOW DATABASES;
+
 -- SELECT 查询：基本查询、别名、去重
 SELECT * FROM todo_item;
 
