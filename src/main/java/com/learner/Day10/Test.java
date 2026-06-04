@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-@Component // 开启即可被Application识别执行
+//@Component // 开启即可被Application识别执行
 public class Test implements CommandLineRunner {
     @Autowired
     private Handle handle;

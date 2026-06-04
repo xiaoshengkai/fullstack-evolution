@@ -51,8 +51,8 @@ public class Handle {
 
     @Transactional
     public void insertBatchWithRollback () {
-        TodoItem item1 = new TodoItem("事务测试1", "HIGH", null, false);
-        TodoItem item2 = new TodoItem("事务测试2", "HIGH", null, false);
+        TodoItem item1 = new TodoItem("事务测试1", "HIGH", null);
+        TodoItem item2 = new TodoItem("事务测试2", "HIGH", null);
         todoItemMapper.insert(item1);
         todoItemMapper.insert(item2);
 

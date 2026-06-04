@@ -21,11 +21,11 @@ public class TodoItem {
     public TodoItem () {}
 
     // ========= 带参构造方法（方便创建对象） =========
-    public TodoItem (String title, String priority, LocalDate deadline, Boolean done) {
+    public TodoItem (String title, String priority, LocalDate deadline) {
         this.title = title;
         this.priority = priority;
         this.deadline = deadline;
-        this.done = done;
+        this.done = false;
     }
 
     public Long getId() {

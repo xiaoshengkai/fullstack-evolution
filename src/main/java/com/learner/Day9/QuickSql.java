@@ -48,7 +48,7 @@ public class QuickSql implements CommandLineRunner {
 
         // ======== 增加后删除 ===========
         System.out.println("\n=== 添加 ===");
-        TodoItem addTodoItem = new TodoItem("test", "LOW", LocalDate.now(), false);
+        TodoItem addTodoItem = new TodoItem("test", "LOW", LocalDate.now());
         todoItemMapper.insert(addTodoItem);
         List<TodoItem> addResult = todoItemMapper.selectList(null);
         addResult.forEach(System.out::println);

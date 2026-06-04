@@ -20,7 +20,7 @@ public class MyBatisPlusTest implements CommandLineRunner {
     public void run(String... args) {
         // ========= 1. 插入 =========
         System.out.println("=== 插入一条新记录 ===");
-        TodoItem newItem = new TodoItem("学习my batis-plus", "HIGH", LocalDate.now(), false);
+        TodoItem newItem = new TodoItem("学习my batis-plus", "HIGH", LocalDate.now());
 
         // 疑问: 它怎么知道我要操作的是哪张表？
         // 解答：默认规则：实体类名 → 下划线表名，创建的实体类叫 TodoItem，MyBatis-Plus 会自动把驼峰命名转为下划线命名
