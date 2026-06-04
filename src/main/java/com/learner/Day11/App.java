@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 import java.util.Map;
 
-@Component
+//@Component
 public class App implements CommandLineRunner {
     @Autowired
     private  TodoService service;

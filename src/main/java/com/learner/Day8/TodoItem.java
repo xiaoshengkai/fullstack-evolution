@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class TodoItem {
 
@@ -86,8 +87,15 @@ public class TodoItem {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s | %s | 截止:%s | %s",
-                id, title, priority, deadline, done ? "已完成" : "未完成");
+        return "TodoItem{" +
+                "id=" + id +
+                ", title='" + Objects.toString(title, "") + '\'' +
+                ", priority='" + Objects.toString(priority, "") + '\'' +
+                ", deadline=" + Objects.toString(deadline, "null") +
+                ", done=" + done +
+                ", createTime=" + Objects.toString(createTime, "null") +
+                ", updateTime=" + Objects.toString(updateTime, "null") +
+                '}';
     }
 }
 
