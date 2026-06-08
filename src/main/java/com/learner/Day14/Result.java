@@ -1,9 +1,9 @@
 package com.learner.Day14;
 
 public class Result<T> {
-    private int code;
-    private String message;
-    private T data;
+    private final int code;
+    private final String message;
+    private final T data;
 
     public Result(int code, String message, T data) {
         this.code = code;
@@ -22,11 +22,9 @@ public class Result<T> {
     public T getData() {
         return data;
     }
-
     public int getCode() {
         return code;
     }
-
     public String getMessage() {
         return message;
     }
