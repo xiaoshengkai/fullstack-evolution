@@ -2,15 +2,20 @@ package com.learner.Day8;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class TodoItem {
 
-    @TableId
+    @TableId // 主键
     private Long id;
+
+    @NotBlank(message = "标题不能为空") // Day14的内容
     private String title;
+
+    @NotBlank(message = "优先级不能为空") // Day14的内容
     private String priority;   // HIGH / MEDIUM / LOW
     private LocalDate deadline;
     private Boolean done;       // 0/1 自动映射为 false/true
